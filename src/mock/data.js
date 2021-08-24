@@ -9,10 +9,12 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
+  title: `Hi there, I'm`,
+  name: 'Katie Ramiré',
+  subtitle: 'a Full Stack Developer',
   cta: '',
+  location: 'Vienna, Austria',
+  home: 'New York / New Jersey',
 };
 
 // ABOUT DATA
