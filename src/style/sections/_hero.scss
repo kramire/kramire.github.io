@@ -6,7 +6,7 @@
   border-bottom: 0px;
   background: $white-color;
   font-weight: 400;
-  color: $dark-blue;
+  color: $grey;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
@@ -88,5 +88,92 @@
         font-size: 2rem;
       }
     }
+  }
+
+  @keyframes slideUp {
+    from {
+      right: calc(50% - 9vw);
+      top: calc(50% - 6vw);
+      border-top: $triangle-length solid $grey;
+      border-bottom: $triangle-length solid transparent;
+      border-left: 18.1vw solid transparent;
+    }
+
+    to {
+      right: 0;
+      top: 0;
+      border-top: calc($triangle-length * 2) solid $grey;
+      border-bottom: calc($triangle-length * 2) solid transparent;
+      border-left: calc(18.1vw * 2) solid transparent;
+    }
+  }
+
+  .hero-right-triangle {
+    width: 0;
+    height: 0;
+
+    border-top: $triangle-length solid $grey;
+    border-bottom: $triangle-length solid transparent;
+    border-left: 18.1vw solid transparent;
+
+    position: absolute;
+    right: calc(50% - 9vw);
+    top: calc(50% - 6vw);
+
+    animation: slideUp 1s ease-out 1s 1 normal forwards;
+  }
+
+  @keyframes slideDown {
+    from {
+      right: calc(50% - 9vw);
+      bottom: calc(50% - 6vw);
+      border-top: $triangle-length solid transparent;
+      border-right: $triangle-length solid transparent;
+      border-left: 18.1vw solid $grey;
+    }
+
+    to {
+      left: 0;
+      bottom: 0;
+      border-top: calc($triangle-length * 2) solid transparent;
+      border-right: calc($triangle-length * 2) solid transparent;
+      border-left: calc(18.1vw * 2) solid $grey;
+    }
+  }
+
+  .hero-left-triangle {
+    width: 0;
+    height: 0;
+    border-top: $triangle-length solid transparent;
+    border-right: $triangle-length solid transparent;
+    border-left: 18.1vw solid $grey;
+
+    position: absolute;
+    left: calc(50% - 9vw);
+    bottom: calc(50% - 6vw);
+
+    animation: slideDown 1s ease-out 1s 1 normal forwards;
+  }
+
+  @keyframes fadeInitials {
+    from {
+      display: flex;
+    }
+
+    to {
+      display: none;
+    }
+  }
+
+  .hero-initials {
+    color: white;
+    font-size: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+
+    animation: fadeInitials 500ms linear 100ms 1 normal forwards;
   }
 }
