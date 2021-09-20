@@ -1,24 +1,16 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import GithubButtons from '../GithubButtons/GithubButtons';
-
-import { githubButtons } from '../../mock/data';
+import Title from '../Title/Title';
 
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
-  const { isEnabled } = githubButtons;
 
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
-        <span className="back-to-top">
-          <Link to="hero" smooth duration={1000}>
-            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
-          </Link>
-        </span>
+        <Title title="Network" />
         <div className="social-links">
           {networks &&
             networks.map((network) => {
@@ -42,9 +34,8 @@ const Footer = () => {
           <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
             Jacobo Martínez
           </a>
+          <div>Further customized by Katie Ramiré </div>
         </p>
-
-        {isEnabled && <GithubButtons />}
       </Container>
     </footer>
   );
