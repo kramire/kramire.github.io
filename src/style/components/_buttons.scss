@@ -28,12 +28,6 @@
   border: 2px solid $white-color;
   // border-image-slice: 1;
   cursor: pointer;
-  // Responsive Button hero style
-  @include respond(phone) {
-    background-image: none;
-    border: 2px solid $grey;
-    -webkit-text-fill-color: $grey;
-  }
 
   &:hover {
     border-width: 2px;

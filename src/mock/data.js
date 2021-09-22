@@ -19,10 +19,17 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
+  img: 'vienna.jpg',
+  paragraphOne: `I have a strong passion for web development, and strive to write
+            clean code, enforce best practices, and optimize performance. As an
+            individual, I am incredibly driven. I love learning, have a strong
+            work ethic, and my mindset is always solution-driven.`,
+  paragraphTwo: `My background also includes work in Data Analytics, Business
+            Intelligence, and Management. This has sharpened my critical
+            thinking skills, and taught me how to clearly present ideas.`,
+  paragraphThree: `What makes me unique is my ability to collaborate with both business
+            and technical teams. I bring the logical mindset of a coder, plus the
+            soft skills of a business professional.`,
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 

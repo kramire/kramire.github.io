@@ -175,5 +175,18 @@
     position: relative;
 
     animation: fadeInitials 500ms linear 100ms 1 normal forwards;
+
+    @include respond(tab-land) {
+      font-size: 6rem;
+    }
+    @include respond(tab-port) {
+      font-size: 4rem;
+    }
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+    @include respond(phone-xs) {
+      font-size: 2rem;
+    }
   }
 }
