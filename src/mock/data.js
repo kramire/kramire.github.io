@@ -20,47 +20,45 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'vienna.jpg',
-  paragraphOne: `I have a strong passion for web development, and strive to write
-            clean code, enforce best practices, and optimize performance. As an
-            individual, I am incredibly driven. I love learning, have a strong
-            work ethic, and my mindset is always solution-driven.`,
-  paragraphTwo: `My background also includes work in Data Analytics, Business
-            Intelligence, and Management. This has sharpened my critical
+  p1: `I've been working as a Fullstack Developer for about 3 years, with a strong focus on the frontend.`,
+  p2: `Most of my work has been with React, Typescript, various state management, Styled Components, and Semantic UI.`,
+  p3: `When I work, I strive to write clean code, enforce best practices, and optimize performance.`,
+  p4: `My background also includes work in Data Analytics, and Management. This has sharpened my critical
             thinking skills, and taught me how to clearly present ideas.`,
-  paragraphThree: `What makes me unique is my ability to collaborate with both business
-            and technical teams. I bring the logical mindset of a coder, plus the
-            soft skills of a business professional.`,
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  // p4: `What makes me unique is my ability to collaborate with both business
+  //           and technical teams. I bring the logical mindset of a coder, plus the
+  //           soft skills of a business professional.`,
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'runningLog.png',
+    title: 'Running Log + Running Log 2.0',
+    info: `Track your runs, and let Running Log predict if you're at risk of injury.`,
+    info2:
+      'V1 built with: React, Redux, Express, MongoDB. V2 is actively being built with: Typescript, React Query, Postgres',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/kramire/running-log', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'lunchPicker.png',
+    title: 'Lunch Picker',
+    info: `Can't decide where to grab lunch? Get a random pick! See the restaurant reviews, photos, and contact info.`,
+    info2: 'Build with React, Typescript, Serverless Functions, Styled Components, and Jest',
+    url: 'https://xenodochial-lewin-8ab7a8.netlify.app/',
+    repo: 'https://github.com/kramire/lunch-picker-2.0', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'jukbox.png',
+    title: 'JUKBOX',
+    info: 'Create a digital jukbox, and have listeners add songs to the queue via their phone.',
+    info2: 'Contributed to this group project: Postgres DB, WebSockets, Project Management.',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/Do0oV/jukbox-fe', // if no repo, the button will not show up
   },
 ];
 

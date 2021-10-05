@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, p1, p2, p3, p4, resume } = about;
 
   return (
     <section id="about">
@@ -36,9 +36,10 @@ const About = () => {
           <Col lg={6} sm={12}>
             <Fade bottom duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
-                {paragraphOne && <p className="about-wrapper__info-text">{paragraphOne}</p>}
-                {paragraphTwo && <p className="about-wrapper__info-text">{paragraphTwo}</p>}
-                {paragraphThree && <p className="about-wrapper__info-text">{paragraphThree}</p>}
+                {p1 && <p className="about-wrapper__info-text">{p1}</p>}
+                {p2 && <p className="about-wrapper__info-text">{p2}</p>}
+                {p3 && <p className="about-wrapper__info-text">{p3}</p>}
+                {p4 && <p className="about-wrapper__info-text">{p4}</p>}
               </div>
             </Fade>
           </Col>
