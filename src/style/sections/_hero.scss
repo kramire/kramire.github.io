@@ -102,8 +102,8 @@
     to {
       right: 0;
       top: 0;
-      border-top: calc($triangle-length * 2) solid $grey;
-      border-bottom: calc($triangle-length * 2) solid transparent;
+      border-top: $triangle-length-border solid $grey;
+      border-bottom: $triangle-length-border solid transparent;
       border-left: calc(18.1vw * 2) solid transparent;
     }
   }
@@ -135,8 +135,8 @@
     to {
       left: 0;
       bottom: 0;
-      border-top: calc($triangle-length * 2) solid transparent;
-      border-right: calc($triangle-length * 2) solid transparent;
+      border-top: $triangle-length-border solid transparent;
+      border-right: $triangle-length-border solid transparent;
       border-left: calc(18.1vw * 2) solid $grey;
     }
   }
